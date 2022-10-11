@@ -1,0 +1,53 @@
+{
+  "title": "Spotify only media keys",
+  "rules": [
+    {
+      "description": "Rewind controls spotify",
+      "manipulators": [
+        {
+          "from": { "key_code": "f7" },
+          "to": [
+            {
+              "repeat": false,
+              "halt": true,
+              "shell_command": "osascript ~/.config/karabiner/spotify-rewind.applescript"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Play/Pause controls spotify",
+      "manipulators": [
+        {
+          "from": { "key_code": "f8" },
+          "to": [
+            {
+              "repeat": false,
+              "halt": true,
+              "shell_command": "osascript ~/.config/karabiner/spotify-open-and-play.applescript"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Fast forward controls spotify",
+      "manipulators": [
+        {
+          "from": { "key_code": "f9" },
+          "to": [
+            {
+              "repeat": false,
+              "halt": true,
+              "shell_command": "osascript ~/.config/karabiner/spotify-open-and-next.applescript"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
